@@ -125,13 +125,13 @@ export const Carousel = ({ itemsToShow = 5 }) => {
 
   const goToPrevSlide = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? items.length - 1 : prevIndex - 1
+      prevIndex === 0 ? carouselItems.length - 1 : prevIndex - 1
     );
   };
 
   const goToNextSlide = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === items.length - 1 ? 0 : prevIndex + 1
+      prevIndex === carouselItems.length - 1 ? 0 : prevIndex + 1
     );
   };
 
