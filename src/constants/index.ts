@@ -60,3 +60,41 @@ export const allMenuItems = [
     show: true
   },
 ];
+
+export const carouselItems = [
+    {
+        id: "c1",
+        src: 'clock.png',
+        title: 'Living Room 1'
+    },
+    {
+        id: "c2",
+        src: 'couch.png',
+        title: 'Living Room 2'
+    },
+    {
+        id: "c3",
+        src: 'home.png',
+        title: 'Living Room 3'
+    },
+    {
+        id: "c4",
+        src: 'plant.png',
+        title: 'Living Room 4'
+    },
+    {
+        id: "c5",
+        src: 'seat.png',
+        title: 'Living Room 5'
+    },
+    {
+        id: "c6",
+        src: 'shelf.png',
+        title: 'Living Room 6'
+    },
+    {
+        id: "c7",
+        src: 'sofa.png',
+        title: 'Living Room 7'
+    },
+]

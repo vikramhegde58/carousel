@@ -23,12 +23,14 @@ const menuItemStyle = css`
 `;
 
 const NavBarContainer = styled.nav`
+  z-index: 100;
   position: fixed;
   color: white;
   display: flex;
   background-color: #2f302c;
   width: 100%;
   height: 70px;
+  top: 0px;
 `;
 
 const Logo = styled.img`
@@ -96,11 +98,6 @@ export const NavBar = () => {
 
     const menuItemsArray = Array.from(menuDiv.children) as HTMLDivElement[];
     const prevMoreItems = [...moreItems];
-
-    menuItemsArray.forEach((itm) => {
-      console.log(itm.offsetLeft, menuDiv.offsetWidth + menuDiv.offsetLeft);
-    });
-
     while (
       menuItemsArray.length > 0 &&
       menuItemsArray[menuItemsArray.length - 1].offsetLeft +
